@@ -73,6 +73,12 @@ WantedBy=multi-user.target
      
 - **Streamlit App**:
   - Service file: `/lib/systemd/system/AGEseqAPP.service`
+  - ```sudo nano /lib/systemd/system/AGEseqAPP.service``` copy, paste and save below configuration.
+  - ```sudo chmod 644 /lib/systemd/system/AGEseqAPP.service```
+  - ```sudo systemctl daemon-reload```
+  - ```sudo systemctl enable AGEseqAPP.service```
+  - ```sudo systemctl start AGEseqAPP.service```
+  - ```sudo systemctl status AGEseqAPP.service```
   - Configuration:
 
 ```
