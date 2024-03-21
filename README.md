@@ -64,7 +64,15 @@ Type=simple
 WantedBy=multi-user.target
 
 ```
+   -  Follow below steps to configure:
+   -  ```sudo nano /lib/systemd/system/AGEseqAPI.service``` copy, paste and save above configuration.
+   -  ```sudo chmod 644 /lib/systemd/system/AGEseqAPI.service```
+   -  ```sudo systemctl daemon-reload```
+   -  ```sudo systemctl enable AGEseqAPI.service```
+   -  ```sudo systemctl start AGEseqAPI.service```
+   - ```sudo systemctl status AGEseqAPI.service```
 
+     
 - **Streamlit App**:
   - Service file: `/lib/systemd/system/AGEseqAPP.service`
   - Configuration:
